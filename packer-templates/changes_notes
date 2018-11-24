@@ -1,0 +1,10 @@
+Regarding to error HTTP 404 not found while executing BUILD command on Pakcer, 
+here some notes due to some changes on application-server.json. 
+This error happens becaouse of invalid "iso-url" code and it checksum,
+Here is the changes list,
+1. "iso_url": "http://releases.ubuntu.com/14.04/{{ user  `PACKER_BOX_NAME`  }}.iso",
+2. "iso_checksum": "dde07d37647a1d2d9247e33f14e91acb10445a97578384896b4e1d985f754cc1",
+
+referring to the forum article , 
+https://discussions.udacity.com/t/http-releases-ubuntu-com-trusty-ubuntu-14-04-4-server-amd64-iso-virtualbox-iso-error-downloading-error-making-http-get-request-404-not-found/845793/4
+
